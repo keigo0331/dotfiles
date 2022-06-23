@@ -1,0 +1,92 @@
+[init]
+  defaultBranch = main
+
+[user]
+  name = keigo0331
+
+[alias]
+  # add
+  an  = "!f() { git status -s | nl -s _ | grep \"^\\s*$1_\" | cut -d _ -f 2 | cut -c 3- | xargs -I % git add %; }; f"
+
+  # add & commit
+  acal = "!git add -A; git commit -m "
+  acam = "!git add -A; git commit --amend"
+  acf  = "!f() { git status -s | sed -n 1p | cut -c 3-; }; git add `f`; git commit -m `f`"
+  acfm = "!f() { git status -s | sed -n 1p | cut -c 3-;  }; echo Write commit message for [`f` ]" \
+    && read message && "f() { git status -s | sed -n 1p | cut -c 3-; }; git add `f`; git commit -m \"$message @`f`\""
+  acn  = "!file=`git status -s | nl -s , | grep \"^\\s*$1,\" | cut -d , -f 2 | cut -c 3-`; \
+    echo Write message for $file; read message; f() { git add $file; git commit -m \"$message @$file\"; }; f"
+
+  # branch
+  b   = "!git branch | nl"
+  ba  = "!git branch -a | nl"
+  bm  = branch --merged
+  bmd = "!f() { git branch --merged | grep -v develop | grep -v '*'; }; git branch -d `f`"
+  bdn = "!f() { git branch | nl -s _ | grep \"\\s$1_\" | cut -d _ -f 2 | xargs -I % git branch -D %; }; f"
+
+  # commit
+  cm = commit -m
+
+  # checkout
+  co  = checkout
+  cob = checkout -b
+  cod = checkout develop
+  com = checkout master
+  con = "!f() { git branch | nl -s , | grep \"\\s$1,\" | cut -d , -f 2 | xargs -I % git checkout %; }; f"
+
+  # cherry-pick
+  cp = cherry-pick
+
+  # log
+  lf  = "!git log --format=format:\"%C(red)%h %C(blue)<%an> %C(green)%s %C(yellow)(%ar)\" -20 | nl"
+  lfn = "!f() { git log --format=format:\"%C(red)%h %C(blue)<%an> %C(green)%s %C(yellow)(%ar)\" -$1 | nl; }; f"
+  ln  = log --name-only
+  lp  = log -p
+
+  # pull
+  pl  = pull --prune
+  plm = pull --prune origin master
+
+  # push
+  ps  = "!f() { git branch | grep -v develop | grep '^*' | cut -c 3-; }; git push origin `f`"
+  psh = push heroku master
+
+  # rebase
+  rb  = rebase
+  rbc = rebase --continue
+  rbd = rebase develop
+  rbi = "!f() { git rebase -i head~$1; }; f"
+
+  # stash
+  ss   = stash
+  ssa  = "!f() { git stash apply stash@{$1}; }; f"
+  ssc  = stash clear
+  ssd  = "!f() { git stash drop stash@{$1}; }; f"
+  ssl  = stash list
+  ssp  = "!f() { git stash pop stash@{$1}; }; f"
+  sssh = "!f() { git stash show -p stash@{$1}; }; f"
+  ssss = stash save
+
+  # status
+  st = "!git status -s | nl"
+
+[core]
+  editor = nvim
+  symlinks = false
+
+[pager]
+  diff = delta
+  log = delta
+  reflog = delta
+  show = delta
+
+[delta]
+  plus-style = "syntax #012800"
+  minus-style = "syntax #340001"
+  syntax-theme = ansi
+  navigate = true
+  side-by-side = true
+
+
+[interactive]
+  diffFilter = delta --color-only
