@@ -1,14 +1,54 @@
-# HomebrewのGitを使うパス
-export PATH=/opt/homebrew/opt/git:$PATH
+# 環境変数
+export LANG=ja_JP.UTF-8
+export KCODE=u
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export EDITOR=/opt/homebrew/opt/neovim
 
+# ----------------
+# HomebrewのGitを使うようパスを変更
+export PATH=/opt/homebrew/opt/git:$PATH
+# ----------------
+
+# ----------------
+# pyenvの設定
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+# ----------------
+
+# ----------------
+# openssl のパスを通す。Macはデフォルトでは LibreSSL を使うようになっているため
+export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
+# ----------------
+
+# ----------------
+# sqlite のパスを通す。Macにはデフォルトで入ってるため Homebrew のを使うよう変更
+export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
+# ----------------
+
+# ----------------
+# zlib の設定。Macにはデフォルトで入ってるため Homebrew のを使うよう変更
+export LDFLAGS="-L/opt/homebrew/opt/zlib/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/zlib/include"
+
+export PKG_CONFIG_PATH="/opt/homebrew/opt/zlib/lib/pkgconfig"
+# ----------------
+
+# ----------------
+# tcl-tk の設定。Macにはデフォルトで入ってるため Homebrew のを使うよう変更
+export PATH="/opt/homebrew/opt/tcl-tk/bin:$PATH"
+# ----------------
+
+# ----------------
 # Zinitの導入
 # https://github.com/zdharma-continuum/zinit
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 source "${ZINIT_HOME}/zinit.zsh"
+# ----------------
 
-# 環境変数
-export LANG=ja_JP.UTF-8
-export KCODE=u
+# ----------------
+# 詳細設定
 
 # hook関数を登録する
 autoload -Uz add-zsh-hook
@@ -54,6 +94,10 @@ setopt hist_reduce_blanks
 
 # リダイレクトの上書きを不可
 setopt clobber
+
+# Ctrl+A などを使えるようにする
+bindkey -e
+# ----------------
 
 # ----------------
 # プロンプトの設定
