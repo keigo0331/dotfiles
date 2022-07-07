@@ -1,0 +1,41 @@
+# カラーをhybridに変更
+[[plugins]]
+repo = 'w0ng/vim-hybrid'
+hook_add = 'source $XDG_CONFIG_HOME/nvim/plugins/vim-hybrid.vim'
+
+# ステータスライン
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+hook_add = 'source $XDG_CONFIG_HOME/nvim/plugins/lightline.vim'
+
+# 自動補完
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+hook_add = '''
+  let g:deoplete#enable_at_startup = 1
+'''
+
+# インクリメンタルサーチ
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+hook_add = 'source $XDG_CONFIG_HOME/nvim/plugins/denite.vim'
+
+# deniteの補助プラグイン
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+depends = 'denite.nvim'
+on_path = '.*'
+
+# deniteの補助プラグイン
+[[plugins]]
+repo = 'Shougo/neoyank.vim'
+depends = 'denite.nvim'
+on_event = 'TextYankPost'
+
+# バッファ上のコードを実行する
+# Ex) :QuickRun ruby
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+hook_post_update = '''
+  let g:quickrun_config = {'*': {'hook/time/enable': '1'},}
+'''
