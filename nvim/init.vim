@@ -7,8 +7,8 @@ augroup END
 " zinitの設定
 let s:nvim_config_dir = expand('$XDG_CONFIG_HOME/nvim')
 let s:dein_cache_dir  = expand('$XDG_CACHE_HOME/dein')
-let s:dein_repo_dir   = expand(s:dein_cache_dir . '/repos/github.com/Shougo/dein.vim')
-let s:undo_dir        = expand(s:nvim_config_dir . '/undo')
+let s:dein_repo_dir   = s:dein_cache_dir . '/repos/github.com/Shougo/dein.vim'
+let s:undo_dir        = s:nvim_config_dir . '/undo'
 
 if &compatible
   set nocompatible " Be iMproved
