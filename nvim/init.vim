@@ -48,12 +48,13 @@ syntax enable
 " If you want to install not installed plugins on startup.
 if dein#check_install()
   call dein#install()
-
-  runtime! settings.vim
-  runtime! mapping.vim
-  runtime! filetypes.vim
 endif
 " ----------------
+
+" 設定ファイルを読み込む
+runtime! settings.vim
+runtime! mappings.vim
+runtime! filetypes.vim
 
 " VimのUndoを永続化する
 if has('persistent_undo')
