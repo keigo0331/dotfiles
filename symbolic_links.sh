@@ -1,5 +1,10 @@
 #!/bin/sh
-DOTFILES_PATH=$HOME/dev/dotfiles/
+if [ -z $DOTFILES_PATH ]; then
+  echo '$DOTFILES_PATH が設定されていません。'
+  exit
+fi
+
+echo '設定ファイルのシンボリックリンクを作成します。'
 
 ln -sf $DOTFILES_PATH/zsh/.zshrc ~/.zshrc
 ln -sf $DOTFILES_PATH/tmux/.tmux.conf ~/.tmux.conf
