@@ -67,5 +67,7 @@ function! OpenModifiableQF()
   cw
   set nowrap
 endfunction
-
 autocmd QuickfixCmdPost vimgrep call OpenModifiableQF()
+
+" 行番号の色を変更
+autocmd ColorScheme * highlight lineNr guifg=lightgray
