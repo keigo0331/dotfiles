@@ -69,16 +69,3 @@ function! OpenModifiableQF()
 endfunction
 
 autocmd QuickfixCmdPost vimgrep call OpenModifiableQF()
-
-" ----------------
-" Enter で改行
-augroup main
-  autocmd!
-augroup END
-
-autocmd main BufWinEnter *
-  \  if &modifiable
-  \|   nnoremap <buffer> <CR> i<CR><ESC>
-  \| else
-  \|   nunmap <buffer> <CR>
-  \| endif

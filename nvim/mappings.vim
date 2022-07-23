@@ -19,3 +19,14 @@ inoremap <C-f> <ESC>la
 inoremap <C-a> <ESC>^i
 inoremap <C-e> <ESC>$a
 inoremap <C-k> <ESC>lDa
+
+" Enter で改行
+augroup main
+  autocmd!
+augroup END
+autocmd main BufWinEnter *
+  \  if &modifiable
+  \|   nnoremap <buffer> <CR> o<ESC>
+  \| else
+  \|   nunmap <buffer> <CR>
+  \| endif
