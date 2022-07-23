@@ -22,7 +22,6 @@ eval "$(pyenv init -)"
 eval "$(rbenv init - zsh)"
 # ----------------
 
-
 # ----------------
 # openssl のパスを通す。Macはデフォルトでは LibreSSL を使うようになっているため
 export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
