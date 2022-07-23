@@ -2,9 +2,6 @@
 map Y y$
 
 " Normal
-nnoremap <CR> o<ESC>
-" エンターで改行
-
 " C-cでカーソル行以降改行
 nnoremap <C-c> i<CR><ESC>
 
