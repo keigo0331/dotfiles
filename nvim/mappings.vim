@@ -5,6 +5,9 @@ map Y y$
 " C-cでカーソル行以降改行
 nnoremap <C-c> i<CR><ESC>
 
+" r で改行
+nnoremap r o<ESC>
+
 " Command mode
 " C-でカーソル移動
 cnoremap <C-a> <Home>
@@ -20,14 +23,3 @@ inoremap <C-f> <ESC>la
 inoremap <C-a> <ESC>^i
 inoremap <C-e> <ESC>$a
 inoremap <C-k> <ESC>lDa
-
-" Enter で改行
-augroup main
-  autocmd!
-augroup END
-autocmd main BufWinEnter *
-  \  if &modifiable
-  \|   nnoremap <buffer> <CR> o<ESC>
-  \| else
-  \|   nunmap <buffer> <CR>
-  \| endif
