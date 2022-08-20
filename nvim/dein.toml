@@ -86,3 +86,9 @@ on_ft = 'help'
 hook_add = '''
   set helplang=ja,en
 '''
+
+# VSCodeのようなエディタ機能を実現
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+rev = 'release'
+merged = '0'

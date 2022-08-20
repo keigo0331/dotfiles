@@ -3,12 +3,14 @@ set clipboard+=unnamedplus "クリップボードに保存
 set confirm "バッファが変更されているとき、 保存するかどうか確認を求める
 set noswapfile "スワップファイルを作らない
 set nobackup "バックアップファイルを作らない
+set nowritebackup "上書き保存前の一時ファイルを作成しない"
 set spelllang=en,cjk "スペルチェック時に日本語を除外
 set visualbell "ビープの代わりにビジュアルベル(画面フラッシュ)を使う
 set t_vb= "ビジュアルベルも無効化する
 set mouse=niv "マウスを有効にする
 set modifiable
 set write
+set updatetime=300 "更新時間"
 
 "Display
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=2 "カーソルの表示を変更
@@ -25,6 +27,7 @@ set listchars=tab:»-,trail:-,extends:»,precedes:«,nbsp:% "デフォルト不�
 set conceallevel=0 "カーソルが内行の内容を隠蔽しない
 set pumheight=15 "補完メニューの幅
 set termguicolors "True Colorでのシンタックスハイライト
+set signcolumn=yes "サインカラムを表示"
 
 "Normal Mode
 set nostartofline "移動コマンドを使ったとき、行頭に移動しない
