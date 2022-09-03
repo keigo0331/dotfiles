@@ -5,6 +5,7 @@ tap "homebrew/core"
 brew "bat"
 brew "git"
 brew "git-delta"
+brew "mas"
 brew "n"
 brew "neovim"
 brew "openssl@3"
@@ -36,3 +37,5 @@ cask "krisp"
 cask "obs"
 cask "slack"
 cask "zoom"
+mas "LadioCast", id: 411213048
+mas "LINE", id: 539883307
