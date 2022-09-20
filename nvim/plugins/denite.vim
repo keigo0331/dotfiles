@@ -1,3 +1,6 @@
+call denite#custom#var('file/rec', 'command',
+    \ ['rg', '--files', '--vimgrep'])
+
 nmap <silent> <C-u><C-f> :<C-u>Denite file/rec<CR>
 nmap <silent> <C-u><C-d> :<C-u>Denite directory_rec<CR>
 nmap <silent> <C-u><C-l> :<C-u>Denite line<CR>

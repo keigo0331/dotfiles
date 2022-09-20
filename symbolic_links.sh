@@ -9,6 +9,7 @@ echo '設定ファイルのシンボリックリンクを作成します。'
 ln -sf $DOTFILES_PATH/zsh/.zshrc ~/.zshrc
 ln -sf $DOTFILES_PATH/tmux/.tmux.conf ~/.tmux.conf
 ln -sf $DOTFILES_PATH/git/.gitconfig ~/.gitconfig
+ln -sf $DOTFILES_PATH/.ripgreprc ~/.ripgreprc
 
 mkdir -p $HOME/.config/nvim/plugins $HOME/.config/nvim/undo
 
