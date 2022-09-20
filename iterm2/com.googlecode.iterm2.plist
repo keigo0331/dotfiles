@@ -274,12 +274,16 @@
 			</dict>
 			<key>Ansi 12 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.47479093074798584</real>
+				<real>1</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.34725069999694824</real>
+				<real>0.77041013464113162</real>
 				<key>Red Component</key>
-				<real>0.074933364987373352</real>
+				<real>0.1247711181640625</real>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
