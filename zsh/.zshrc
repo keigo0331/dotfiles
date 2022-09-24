@@ -193,4 +193,5 @@ abbrev-alias d-c='docker-compose'
 abbrev-alias nv='nvim'
 abbrev-alias tm='tmux'
 abbrev-alias tm-kill='tmux kill-session'
+abbrev-alias tm-re='tmux a -t 0'
 # ----------------
