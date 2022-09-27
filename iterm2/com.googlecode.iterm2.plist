@@ -359,12 +359,16 @@
 			</dict>
 			<key>Ansi 7 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.96549803018569946</real>
+				<real>0.82932852208614349</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.98070180416107178</real>
+				<real>0.84615828787941727</real>
 				<key>Red Component</key>
-				<real>0.98026049137115479</real>
+				<real>0.84619140625</real>
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
