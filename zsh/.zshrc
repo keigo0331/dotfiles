@@ -4,6 +4,7 @@ export KCODE=u
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 export EDITOR=/opt/homebrew/opt/neovim
+export PRIVATE_IP=$(ifconfig en0 | awk '$1 == "inet" {print $2}')
 
 # ----------------
 # HomebrewのGitを使うようパスを変更
