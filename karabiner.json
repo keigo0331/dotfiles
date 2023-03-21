@@ -99,21 +99,21 @@
                         },
                         {
                             "from": {
-                                "key_code": "grave_accent_and_tilde"
+                                "key_code": "end"
                             },
                             "to": [
                                 {
-                                    "key_code": "escape"
+                                    "key_code": "delete_or_backspace"
                                 }
                             ]
                         },
                         {
                             "from": {
-                                "key_code": "page_up"
+                                "key_code": "grave_accent_and_tilde"
                             },
                             "to": [
                                 {
-                                    "key_code": "delete_or_backspace"
+                                    "key_code": "escape"
                                 }
                             ]
                         },
@@ -133,17 +133,17 @@
                             },
                             "to": [
                                 {
-                                    "key_code": "return_or_enter"
+                                    "key_code": "delete_or_backspace"
                                 }
                             ]
                         },
                         {
                             "from": {
-                                "key_code": "end"
+                                "key_code": "page_up"
                             },
                             "to": [
                                 {
-                                    "key_code": "return_or_enter"
+                                    "key_code": "delete_or_backspace"
                                 }
                             ]
                         }
