@@ -7,6 +7,11 @@ export EDITOR=/opt/homebrew/opt/neovim
 export PRIVATE_IP=$(ifconfig en0 | awk '$1 == "inet" {print $2}')
 
 # ----------------
+# Homebrew のパスを通す
+export PATH=/opt/homebrew/bin:$PATH
+# ----------------
+
+# ----------------
 # HomebrewのGitを使うようパスを変更
 export PATH=/opt/homebrew/opt/git:$PATH
 # ----------------
