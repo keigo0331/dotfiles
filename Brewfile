@@ -10,7 +10,7 @@ brew "git-delta"
 brew "mas"
 brew "n"
 brew "neovim"
-brew "openssl@3"
+brew "openssl@3", link: false
 brew "peco"
 brew "pyenv"
 brew "ruby-build"
