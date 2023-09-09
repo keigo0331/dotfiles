@@ -92,3 +92,7 @@ hook_add = '''
 repo = 'neoclide/coc.nvim'
 rev = 'release'
 merged = '0'
+
+# GithubCopilot
+[[plugins]]
+repo = 'github/copilot.vim'
