@@ -71,3 +71,15 @@ autocmd QuickfixCmdPost vimgrep call OpenModifiableQF()
 
 " 行番号の色を変更
 autocmd ColorScheme * highlight lineNr guifg=lightgray
+
+" tree-shitterの設定
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  highlight = {
+    enable = true,
+    disable = {
+      'c_sharp',
+    }
+  }
+}
+EOF

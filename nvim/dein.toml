@@ -96,3 +96,9 @@ merged = '0'
 # GithubCopilot
 [[plugins]]
 repo = 'github/copilot.vim'
+
+# サードパーティ制のコードパーサー
+# ハイライトなどの速度向上が期待できる
+[[plugins]]
+repo = 'nvim-treesitter/nvim-treesitter'
+hook_post_update = 'TSUpdate'
