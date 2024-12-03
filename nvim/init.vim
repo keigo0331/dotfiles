@@ -36,7 +36,7 @@ endif
 
 " Add or remove your plugins here like this:
 call dein#load_toml(s:nvim_config_dir . '/dein.toml',      {'lazy': 0})
-call dein#load_toml(s:nvim_config_dir . '/dein_lazy.toml', {'lazy': 1})
+"call dein#load_toml(s:nvim_config_dir . '/dein_lazy.toml', {'lazy': 1})
 
 " Required:
 call dein#end()
