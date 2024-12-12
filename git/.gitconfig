@@ -21,7 +21,7 @@
   "
 
   # add
-  an  = "!f() { git status -s | nl -s _ | grep \"^\\s*$1_\" | cut -d _ -f 2 | cut -c 3- | xargs -I % git add %; }; f"
+  an  = "!f() { git status -s | nl -s _ | grep \"^\\s*$1_\" | sed \"s/^ *[0-9]_//\" | cut -c 3- | xargs -I % git add %; }; f"
 
   # branch
   b   = "!git branch | nl"
