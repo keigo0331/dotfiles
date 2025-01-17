@@ -41,13 +41,13 @@ hook_post_update = '''
 '''
 
 # カーソル位置のコンテキストにあわせてFiletypeを切り替える
-[[plugins]]
-repo = 'osyo-manga/vim-precious'
-depends = ['context_filetype.vim']
+#[[plugins]]
+#repo = 'osyo-manga/vim-precious'
+#depends = ['context_filetype.vim']
 
-# カーソル位置のコンテキストのFiletypeを判定する
-[[plugins]]
-repo = 'Shougo/context_filetype.vim'
+## カーソル位置のコンテキストのFiletypeを判定する
+#[[plugins]]
+#repo = 'Shougo/context_filetype.vim'
 
 # コメントアウト
 [[plugins]]
