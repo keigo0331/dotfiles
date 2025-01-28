@@ -3,7 +3,7 @@ export LANG=ja_JP.UTF-8
 export KCODE=u
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
-export EDITOR=/opt/homebrew/opt/neovim
+export EDITOR=/opt/homebrew/bin/nvim
 export PRIVATE_IP=$(ifconfig en0 | awk '$1 == "inet" {print $2}')
 
 # ----------------
