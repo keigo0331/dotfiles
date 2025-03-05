@@ -83,3 +83,6 @@ require'nvim-treesitter.configs'.setup {
   }
 }
 EOF
+
+" 現在のファイルのパスをクリップボードにコピーする
+command! CopyPath let @+ = expand('%')
