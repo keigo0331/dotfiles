@@ -18,7 +18,7 @@ let g:lightline = {
   \ }
 
 function! Filepath()
-  return expand('%')
+  return expand('%:.')
 endfunction
 
 set noshowmode
