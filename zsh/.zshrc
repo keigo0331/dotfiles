@@ -24,6 +24,11 @@ eval "$(pyenv init -)"
 # ----------------
 
 # ----------------
+# python のライブラリ保存先のパスを通す
+export PATH="$HOME/.local/bin:$PATH"
+# ----------------
+
+# ----------------
 # rbenvの設定
 eval "$(rbenv init - zsh)"
 # ----------------
