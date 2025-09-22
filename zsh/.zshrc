@@ -63,6 +63,11 @@ source "${ZINIT_HOME}/zinit.zsh"
 eval "$(direnv hook zsh)"
 # ----------------
 
+# ----------------
+# npmを使って入れたライブラリを使えるようにパスを通す
+export PATH="$HOME/.npm-global/bin:$PATH"
+# ----------------
+
 
 # ----------------
 # 詳細設定
