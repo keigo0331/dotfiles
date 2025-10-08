@@ -1,0 +1,71 @@
+{
+  "includeCoAuthoredBy": false,
+  "disableBypassPermissionsMode": "disable",
+  "env": {
+    "CLAUDE_CODE_ENABLE_TELEMETRY": "1",
+    "DISABLE_ERROR_REPORTING": "1",
+    "DISABLE_BUG_COMMAND": "1"
+  },
+  "permissions": {
+    "deny": [
+      "_description: 特定のファイル操作を全て禁止",
+      "Read(.env*)", "Edit(.env*)", "Write(.env*)",
+      "Read(**/.env*)", "Edit(**/.env*)", "Write(**/.env*)",
+      "Read(.credential*)", "Edit(.credential*)", "Write(.credential*)",
+      "Read(*.credential*)", "Edit(*.credential*)", "Write(*.credential*)",
+      "Read(**/.credential*)", "Edit(**/.credential*)", "Write(**/.credential*)",
+      "Read(**/*.credential*)", "Edit(**/*.credential*)", "Write(**/*.credential*)",
+      "Read(.secret*)", "Edit(.secret*)", "Write(.secret*)",
+      "Read(*.secret*)", "Edit(*.secret*)", "Write(*.secret*)",
+      "Read(**/.secret*)", "Edit(**/.secret*)", "Write(**/.secret*)",
+      "Read(**/*.secret*)", "Edit(**/*.secret*)", "Write(**/*.secret*)",
+      "Read(master.key*)", "Edit(master.key*)", "Write(master.key*)",
+      "Read(**/master.key*)", "Edit(**/master.key*)", "Write(**/master.key*)",
+
+      "_description: 特定のディレクトリ以下の操作を全て禁止",
+      "Read(~/.aws/**)", "Edit(~/.aws/**)", "Write(~/.aws/**)",
+      "Read(**/.aws/**)", "Edit(**/.aws/**)", "Write(**/.aws/**)",
+      "Read(~/.ssh/**)", "Edit(~/.ssh/**)", "Write(~/.ssh/**)",
+      "Read(**/.ssh/**)", "Edit(**/.ssh/**)", "Write(**/.ssh/**)",
+      "Read(secrets/**)", "Edit(secrets/**)", "Write(secrets/**)",
+      "Read(**/secrets/**)", "Edit(**/secrets/**)", "Write(**/secrets/**)",
+      "Read(credentials/**)", "Edit(credentials/**)", "Write(credentials/**)",
+      "Read(**/credentials/**)", "Edit(**/credentials/**)", "Write(**/credentials/**)",
+      "Read(log/**)", "Edit(log/**)", "Write(log/**)",
+      "Read(**/log/**)", "Edit(**/log/**)", "Write(**/log/**)",
+      "Read(tmp/**)", "Edit(tmp/**)", "Write(tmp/**)",
+      "Read(**/tmp/**)", "Edit(**/tmp/**)", "Write(**/tmp/**)",
+      "Read(.git/**)", "Edit(.git/**)", "Write(.git/**)",
+      "Read(**/.git/**)", "Edit(**/.git/**)", "Write(**/.git/**)",
+
+      "_description: 危ないコマンドを禁止",
+      "Bash(sudo:*)",
+      "Bash(rm -rf:*)",
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "Bash(nc:*)",
+
+      "_description: 個別",
+      "Write(.terraformrc)",
+      "Write(.aws_config)"
+    ],
+    "allow": [
+      "_description: gh系は許可",
+      "Bash(gh pr checks:*)",
+      "Bash(gh pr view:*)",
+      "Bash(gh search issues:*)",
+      "Bash(gh issue view:*)",
+
+      "Bash(git switch:*)",
+      "Bash(git commit:*)",
+      "Bash(git add:*)",
+      "Bash(git rm:*)",
+      "Bash(git push:*)",
+      "Bash(rm .git/index.lock)",
+      "Bash(rm -f .git/index.lock)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(tflint:*)"
+    ]
+  }
+}
