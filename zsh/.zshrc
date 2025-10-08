@@ -202,7 +202,6 @@ zinit light zsh-users/zsh-completions
 # ----------------
 # aliasの設定
 abbrev-alias relogin='exec $SHELL -l'
-abbrev-alias G='| grep'
 abbrev-alias L='| less'
 abbrev-alias ls="ls -aG"
 abbrev-alias ll='ls -l'
@@ -210,7 +209,6 @@ abbrev-alias rm='rm -i'
 abbrev-alias cp='cp -i'
 abbrev-alias mv='mv -i'
 abbrev-alias mkdir='mkdir -p'
-abbrev-alias grep='grep -r'
 abbrev-alias d-c='docker compose'
 abbrev-alias nv='nvim'
 abbrev-alias tm='tmux'
