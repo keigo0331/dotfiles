@@ -1,6 +1,5 @@
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
-tap "homebrew/core"
 brew "bat"
 brew "certbot"
 brew "git"
