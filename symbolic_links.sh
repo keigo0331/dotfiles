@@ -26,3 +26,11 @@ for file in ${NVIM_PLUGIN_FILES[@]}
 do
   ln -sf $DOTFILES_PATH/nvim/plugins/$file ~/.config/nvim/plugins/$file
 done
+
+mkdir -p $HOME/.codex
+CODEX_FILES=$(ls -aF $DOTFILES_PATH/codex/ | grep -v /)
+
+for file in ${CODEX_FILES[@]}
+do
+  ln -sf $DOTFILES_PATH/codex/$file ~/.codex/$file
+done
