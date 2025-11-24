@@ -9,7 +9,6 @@ brew "imagemagick"
 brew "mas"
 brew "n"
 brew "neovim"
-brew "openssl@3", link: false
 brew "peco"
 brew "pyenv"
 brew "rbenv"
