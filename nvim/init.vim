@@ -55,6 +55,7 @@ endif
 runtime! settings.vim
 runtime! mappings.vim
 runtime! filetypes.vim
+runtime! commands/*.vim
 
 " VimのUndoを永続化する
 if has('persistent_undo')
@@ -83,6 +84,3 @@ require'nvim-treesitter.configs'.setup {
   }
 }
 EOF
-
-" 現在のファイルのパスをクリップボードにコピーする
-command! CopyPath let @+ = expand('%:.')
