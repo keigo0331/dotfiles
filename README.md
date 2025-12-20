@@ -28,20 +28,20 @@ export DOTFILES_PATH="$PWD"
 ```
 
 ## Homebrew
-Brewfile の更新や復元は `homebrew/README.md` を参照してください。
+Brewfile の更新や復元は [homebrew/README.md](homebrew/README.md) を参照してください。
 
 ## 環境変数
 - `DOTFILES_PATH`: リポジトリのルートパスを指定します。
 
 ## ディレクトリ構成
-- `zsh/`: zsh 設定
-- `tmux/`: tmux 設定
-- `git/`: Git 設定
-- `nvim/`: Neovim 設定
-- `homebrew/`: Brewfile 管理
-- `iterm2/`: iTerm2 設定
-- `karabiner.json`: Karabiner 設定
-- `codex/`: Codex 用設定
+- [zsh/](zsh/): zsh 設定
+- [tmux/](tmux/): tmux 設定
+- [git/](git/): Git 設定
+- [nvim/](nvim/): Neovim 設定
+- [homebrew/](homebrew/): Brewfile 管理
+- [iterm2/](iterm2/): iTerm2 設定
+- [karabiner.json](karabiner.json): Karabiner 設定
+- [codex/](codex/): Codex 用設定
 
 ## メモ
 - `.envrc` は Git 管理対象外です。
