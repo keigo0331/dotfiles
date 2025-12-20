@@ -11,7 +11,7 @@ ln -sf $DOTFILES_PATH/tmux/.tmux.conf ~/.tmux.conf
 ln -sf $DOTFILES_PATH/git/.gitconfig ~/.gitconfig
 ln -sf $DOTFILES_PATH/.ripgreprc ~/.ripgreprc
 
-mkdir -p $HOME/.config/nvim/plugins $HOME/.config/nvim/undo
+mkdir -p $HOME/.config/nvim/plugins $HOME/.config/nvim/commands $HOME/.config/nvim/undo
 
 NVIM_FILES=$(ls -aF $DOTFILES_PATH/nvim/ | grep -v /)
 
@@ -25,6 +25,13 @@ NVIM_PLUGIN_FILES=$(ls -aF $DOTFILES_PATH/nvim/plugins | grep -v /)
 for file in ${NVIM_PLUGIN_FILES[@]}
 do
   ln -sf $DOTFILES_PATH/nvim/plugins/$file ~/.config/nvim/plugins/$file
+done
+
+NVIM_COMMAND_FILES=$(ls -aF $DOTFILES_PATH/nvim/commands | grep -v /)
+
+for file in ${NVIM_COMMAND_FILES[@]}
+do
+  ln -sf $DOTFILES_PATH/nvim/commands/$file ~/.config/nvim/commands/$file
 done
 
 mkdir -p $HOME/.codex
