@@ -73,6 +73,11 @@ eval "$(direnv hook zsh)"
 export PATH="$HOME/.npm-global/bin:$PATH"
 # ----------------
 
+# ----------------
+# goを使って入れたライブラリを使えるようにパスを通す
+export PATH="$HOME/go/bin:$PATH"
+# ----------------
+
 
 # ----------------
 # 詳細設定
