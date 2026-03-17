@@ -39,14 +39,14 @@
 - `alfred`: アプリ起動や検索を効率化するランチャーです。
 - `blackhole-16ch`: 仮想オーディオデバイスです。複数チャンネル収録向けに使います。
 - `blackhole-2ch`: 仮想オーディオデバイスです。ステレオ入出力向けに使います。
-- `brave-browser`: Chromium 系ブラウザです。用途を分けたいときの別ブラウザとして使います。
+- `brave-browser`: メイン利用の Chromium 系ブラウザです。
 - `clipy`: クリップボード履歴を扱うために使います。
 - `codex`: Codex のデスクトップアプリです。
 - `docker-desktop`: Docker コンテナ実行環境です。
 - `firefox`: Gecko 系ブラウザです。ブラウザ差分確認にも使います。
 - `font-ricty-diminished`: コーディング向けの日本語対応フォントです。
 - `git-credential-manager`: Git の認証情報を安全に管理するために使います。
-- `google-chrome`: メイン利用の Chromium 系ブラウザです。
+- `google-chrome`: Brave 以外での検証やアカウント分離が必要なときに使う Chromium 系ブラウザです。
 - `google-japanese-ime`: 日本語入力メソッドです。
 - `iterm2`: ターミナルアプリです。`iterm2/` 配下の設定で利用します。
 - `karabiner-elements`: キーボードリマップに使います。`karabiner.json` と連動します。
