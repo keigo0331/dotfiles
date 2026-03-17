@@ -28,7 +28,7 @@ export DOTFILES_PATH="$PWD"
 ```
 
 ## Homebrew
-Brewfile の更新や復元は [homebrew/README.md](homebrew/README.md) を参照してください。
+Brewfile の更新や復元は [homebrew/README.md](homebrew/README.md) を参照してください。パッケージの用途は [homebrew/Brewfile-packages.md](homebrew/Brewfile-packages.md) にまとめています。
 
 ## 環境変数
 - `DOTFILES_PATH`: リポジトリのルートパスを指定します。

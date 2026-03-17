@@ -22,6 +22,11 @@
 brew bundle --file=homebrew/Brewfile
 ```
 
+## パッケージの説明を確認する
+- `Brewfile` にはコメントを残せないため、各エントリの用途は `homebrew/Brewfile-packages.md` にまとめています。
+- `Brewfile` を更新したときは、追加・削除したパッケージに合わせてこのドキュメントも見直してください。
+
 ## 参考
 - `homebrew/update_brewfile.sh`：Brewfile の更新とソートを一括で行うスクリプト。
 - `homebrew/sort_brewfile.rb`：Brewfile のエントリをカテゴリごとに並べ替えます。
+- `homebrew/Brewfile-packages.md`：`Brewfile` に書かれている各パッケージの用途一覧です。
