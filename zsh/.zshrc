@@ -216,6 +216,8 @@ abbrev-alias mv='mv -i'
 abbrev-alias mkdir='mkdir -p'
 abbrev-alias d-c='docker compose'
 abbrev-alias nv='nvim'
+# yaegi で入力履歴と行編集を使えるようにし、毎回 rlwrap を付ける手間を減らす
+abbrev-alias yaegi='rlwrap yaegi'
 abbrev-alias tm='tmux'
 abbrev-alias tm-kill='tmux kill-session'
 abbrev-alias tm-re='tmux a -t 0'
