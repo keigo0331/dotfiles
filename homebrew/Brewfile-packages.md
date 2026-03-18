@@ -4,7 +4,6 @@
 
 ## tap
 - `homebrew/bundle`: `brew bundle` で `Brewfile` を読み書きするための公式 tap です。
-- `homebrew/cask-fonts`: フォント系 cask をインストールするための tap です。
 - `microsoft/git`: Microsoft 製の Git 関連ツールを Homebrew から入れるための tap です。
 
 ## brew
@@ -14,6 +13,7 @@
 - `gh`: GitHub CLI です。PR 作成や issue 操作をターミナルから行うために使います。
 - `git`: バージョン管理本体です。
 - `git-delta`: `git diff` を見やすく表示する差分ビューアです。
+- `go`: Go 言語本体です。Go 製 CLI や開発ツールの導入に使います。
 - `imagemagick`: 画像の変換やリサイズをコマンドラインで行うために使います。
 - `mas`: Mac App Store アプリを CLI で導入・更新するために使います。
 - `n`: Node.js のバージョンを切り替えるための軽量マネージャです。
@@ -21,9 +21,12 @@
 - `pdftk-java`: PDF の結合や分割などを CLI で扱うために使います。
 - `peco`: 候補をインクリメンタル検索しながら選ぶための CUI フィルタです。
 - `pyenv`: Python のバージョン管理に使います。
+- `python@3.11`: Python 3.11 系を明示的に使いたいツールや検証用のランタイムです。
 - `rbenv`: Ruby のバージョン管理に使います。
 - `ripgrep`: 高速な全文検索コマンドです。設定ファイルやコード検索に使います。
+- `rlwrap`: 対話型 CLI に履歴編集や行編集を付けるためのラッパーです。
 - `ruby-build`: `rbenv install` で Ruby をビルドするための定義集です。
+- `six`: Python 2/3 互換レイヤーです。依存ツールの実行時に必要になることがあります。
 - `tcl-tk`: Tk 系ライブラリです。Python や Ruby の GUI 関連ビルドで必要になることがあります。
 - `tig`: Git 履歴をターミナルで閲覧するための TUI クライアントです。
 - `tmux`: ターミナルを分割・多重化するために使います。`tmux/` 配下の設定で利用します。
@@ -48,6 +51,7 @@
 - `git-credential-manager`: Git の認証情報を安全に管理するために使います。
 - `google-chrome`: Brave 以外での検証やアカウント分離が必要なときに使う Chromium 系ブラウザです。
 - `google-japanese-ime`: 日本語入力メソッドです。
+- `inkscape`: ベクター画像の編集に使います。
 - `iterm2`: ターミナルアプリです。`iterm2/` 配下の設定で利用します。
 - `karabiner-elements`: キーボードリマップに使います。`karabiner.json` と連動します。
 - `obs`: 画面録画や配信用のアプリです。
@@ -63,3 +67,7 @@
 - `LINE`: メッセージングアプリです。
 - `Numbers`: 表計算に使います。
 - `Pages`: 文書作成に使います。
+
+## go
+- `github.com/golangci/golangci-lint/cmd/golangci-lint`: Go 向けの総合 Lint ツールです。
+- `github.com/traefik/yaegi/cmd/yaegi`: Go コードをインタプリタ的に実行するためのツールです。
