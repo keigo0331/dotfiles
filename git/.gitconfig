@@ -79,6 +79,7 @@
 [core]
   editor = nvim
   symlinks = false
+  quotepath = false
 
 [pager]
   diff = delta
